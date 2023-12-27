@@ -1,2 +1,0 @@
-employeeID,phone,password,name,email,address,permission
-1,0987654321,00000,王小貓,abcde@gmail.com,高雄市鼓山區,1000

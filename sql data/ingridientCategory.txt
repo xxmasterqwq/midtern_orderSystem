@@ -1,7 +1,0 @@
-ingridientCatID,ingCatName
-1,青菜
-2,肉品
-3,主食/飯
-4,其他
-5,火鍋料/10元
-6,火鍋料/5元

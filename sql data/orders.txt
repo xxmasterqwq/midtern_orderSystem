@@ -1,6 +1,0 @@
-orderID,customerID,datetime,isTakeOut,[table,statusID,discountCodeID
-1000,1003,2023-12-01,True,,2,
-1001,1003,2023-12-01,True,,3,
-1002,1003,2023-12-01,True,,2,
-1003,1003,2023-12-02,False,2,2,
-1004,1005,2023-12-03,False,2,2,
