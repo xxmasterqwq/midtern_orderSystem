@@ -1,0 +1,6 @@
+id,name,phone,password,email,address,point,suspension
+1000,王小明,0912345678,00000,wxm@gmail.com,高雄市鹽埕區,0,True
+1002,test,0,0,0,0,0,False
+1003,00,00,00,00,00,0,False
+1005,王小明,0911222333,000,abcd@gmail.com,高雄市前金區,0,True
+

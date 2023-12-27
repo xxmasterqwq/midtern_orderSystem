@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B75DD646-3E7F-47CB-812C-7798B90BE50B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>期中專題_線上點餐系統</RootNamespace>
+    <AssemblyName>期中專題_線上點餐系統</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cart.Designer.cs">
+      <DependentUpon>cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checlListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checlListForm.Designer.cs">
+      <DependentUpon>checlListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custForm\flavorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custForm\flavorForm.Designer.cs">
+      <DependentUpon>flavorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custForm\hotpotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custForm\hotpotForm.Designer.cs">
+      <DependentUpon>hotpotForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custForm\hotpotForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custForm\hotpotForm2.Designer.cs">
+      <DependentUpon>hotpotForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custForm\MainDishForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custForm\MainDishForm.Designer.cs">
+      <DependentUpon>MainDishForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custForm\otherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custForm\otherForm.Designer.cs">
+      <DependentUpon>otherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custForm\otherForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custForm\otherForm2.Designer.cs">
+      <DependentUpon>otherForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custForm\otherForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custForm\otherForm3.Designer.cs">
+      <DependentUpon>otherForm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custForm\protForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custForm\protForm.Designer.cs">
+      <DependentUpon>protForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custForm\protForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custForm\protForm2.Designer.cs">
+      <DependentUpon>protForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custForm\vegeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custForm\vegeForm.Designer.cs">
+      <DependentUpon>vegeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custForm\vegeForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custForm\vegeForm2.Designer.cs">
+      <DependentUpon>vegeForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerForm.Designer.cs">
+      <DependentUpon>customerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="detailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="detailForm.Designer.cs">
+      <DependentUpon>detailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\checkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\checkForm.Designer.cs">
+      <DependentUpon>checkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\detailInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\detailInfoForm.Designer.cs">
+      <DependentUpon>detailInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\memberManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\memberManagementForm.Designer.cs">
+      <DependentUpon>memberManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\orderManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\orderManagementForm.Designer.cs">
+      <DependentUpon>orderManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\productForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\productForm.Designer.cs">
+      <DependentUpon>productForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVar.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="resgisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resgisterForm.Designer.cs">
+      <DependentUpon>resgisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffForm.Designer.cs">
+      <DependentUpon>staffForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="cart.resx">
+      <DependentUpon>cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checlListForm.resx">
+      <DependentUpon>checlListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custForm\flavorForm.resx">
+      <DependentUpon>flavorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custForm\hotpotForm.resx">
+      <DependentUpon>hotpotForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custForm\hotpotForm2.resx">
+      <DependentUpon>hotpotForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custForm\MainDishForm.resx">
+      <DependentUpon>MainDishForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custForm\otherForm.resx">
+      <DependentUpon>otherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custForm\otherForm2.resx">
+      <DependentUpon>otherForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custForm\otherForm3.resx">
+      <DependentUpon>otherForm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custForm\protForm.resx">
+      <DependentUpon>protForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custForm\protForm2.resx">
+      <DependentUpon>protForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custForm\vegeForm.resx">
+      <DependentUpon>vegeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custForm\vegeForm2.resx">
+      <DependentUpon>vegeForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerForm.resx">
+      <DependentUpon>customerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="detailForm.resx">
+      <DependentUpon>detailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\checkForm.resx">
+      <DependentUpon>checkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\detailInfoForm.resx">
+      <DependentUpon>detailInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\memberManagementForm.resx">
+      <DependentUpon>memberManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\orderManagementForm.resx">
+      <DependentUpon>orderManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\productForm.resx">
+      <DependentUpon>productForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="resgisterForm.resx">
+      <DependentUpon>resgisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffForm.resx">
+      <DependentUpon>staffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
